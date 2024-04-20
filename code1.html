@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Type</title>
+    <style>
+        .SearchBar {
+            float: left;
+
+        }
+        input[type=text]{
+            
+            margin-top: 20px;
+            font-size: 20px;
+            font-style: oblique;
+            padding: 6px;
+            border: none;
+            margin-left: 20px;
+            background: rgb(237, 210, 237);
+            border-radius: 5px;
+
+        }
+        .SearchBar button{
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: none;
+            border-radius: 10px;
+            font-size: large;
+            background: rgb(197, 236, 236);
+        }
+        .SearchBar button:hover{
+            background-color: bisque;
+            cursor: pointer;
+        }
+        .p1{
+            margin-left: 20px;
+            font-size: large;
+            
+        }
+        .resyy{
+            margin-top: 100px;
+            margin-left: 20px;
+            font-size: larger;
+            font-style: normal;
+            font : bold;
+            color: rgb(38, 73, 75);
+
+            
+        }
+    
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p class="p1">Enter the text that you want to get back.</p>
+    <div class="SearchBar">
+        <input type="text" placeholder="Type the name" id="Seinp">
+        <button onclick="search()" >Enter</button>
+        
+    </div>
+    <div class="Result">
+        <p class="resyy" id="res" ></p>
+
+    </div>
+    <script >
+        function search(){
+            var sinp = document.getElementById("Seinp").value;
+            document.getElementById("res").innerText= "You have typed: " + sinp;
+        }
+        
+    </script>
+    
+</body>
+</html>
